@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun with Triangles</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="istriangle.html">Is Triangle?</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="hypotenuse.html">Hypotenuse</a>
-        <a href="area.html">Area</a>
+    <nav class="nav-bar">
+        <a class="link" href="istriangle.html">Is Triangle?</a>
+        <a class="link" href="quiz.html">Quiz</a>
+        <a class="link" href="hypotenuse.html">Hypotenuse</a>
+        <a class="link" href="area.html">Area</a>
     </nav>
     <h1>Is Triangle?</h1>
-    <label for="angle1">angle1</label>
-    <input type="number" class="angle-input" >
-    <label for="angle2">angle2</label>
-    <input type="number" class="angle-input">
-    <label for="angle3">angle3</label>
-    <input type="number" class="angle-input">
-    <button id="is-triangle-btn">Is Triangle</button>
-    <div id="output"></div>
+    <div class="container">
+        <label for="angle1">angle1</label>
+        <input type="number" class="angle-input" >
+        <label for="angle2">angle2</label>
+        <input type="number" class="angle-input">
+        <label for="angle3">angle3</label>
+        <input type="number" class="angle-input">
+        <button id="is-triangle-btn">Is Triangle</button>
+        <div id="output"></div>
+    </div>
 
     <script src="istriangle.js"></script>
 </body>

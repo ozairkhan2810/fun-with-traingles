@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="istriangle.html">Is Triangle?</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="hypotenuse.html">Hypotenuse</a>
-        <a href="area.html">Area</a>
+    <nav class="nav-bar">
+        <a class="link" href="istriangle.html">Is Triangle?</a>
+        <a class="link" href="quiz.html">Quiz</a>
+        <a class="link" href="hypotenuse.html">Hypotenuse</a>
+        <a class="link" href="area.html">Area</a>
     </nav>
     <h1>Calculalte Area of Triangle</h1>
     <h2>Area of Triangle = 1/2(Base * Height)</h2>
-    <label>Base(in cm) = </label>
-    <input type="number" class="side-input" />
-    <label>height(in cm) = </label>
-    <input type="number" class="side-input" />
-    <button id="area-btn">Calculate Area</button>
-    <div id="output"></div>
+    <div class="container">
+        <label>Base(in cm) = </label>
+        <input type="number" class="side-input" />
+        <label>height(in cm) = </label>
+        <input type="number" class="side-input" />
+        <button id="area-btn">Calculate Area</button>
+        <div id="output"></div>
+    </div>
+    
 
     <script src="area.js"></script>
 </body>
