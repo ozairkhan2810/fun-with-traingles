@@ -25,10 +25,22 @@ body {
     margin-bottom: 1rem;
 }
 
-#is-triangle-btn, #area-btn, #hypotenuse-btn {
+#is-triangle-btn, #area-btn, #hypotenuse-btn, #submit-answer-btn {
     background-color: crimson;
     padding: 0.5rem 1rem;
     border-radius: 10%;
     border-color: aliceblue;
 }
 
+.quiz-form {
+    width: 90%;
+    margin: auto;
+}
+
+.question-container {
+    padding-bottom: 1rem;
+}
+
+#submit-answer-btn {
+    margin-left: 4rem;
+}
