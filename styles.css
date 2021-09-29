@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(94, 85, 219);
+    background-color: rgb(177, 175, 201);
 }
 
 .nav-bar {
@@ -53,15 +53,20 @@ body {
 
 footer {
     text-align: center;
+    background-color: rgb(36, 56, 145);
+    width: 50%;
+    margin: auto;
+    border-radius: 1rem;
   }
   
   footer p {
+      padding-top: 1rem;
     font-size: large;
     text-align: center;
   }
   
-  .footer-list {
-    margin: 1rem;
+  footer ul {
+    padding-bottom: 1rem;
   }
 
   .links {
