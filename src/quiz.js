@@ -14,7 +14,10 @@ function calculateScore() {
         }
         index = index + 1;
     }
+    if(index === correctAnswers.length)
     output.innerText = "Your Score: " + score;
+    else
+    output.innerText = "Please answer all questions";
 }
 
 submitAnswerButton.addEventListener("click", calculateScore);
