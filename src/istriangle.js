@@ -23,11 +23,13 @@ function isTriangle() {
     outputEl.innerText = "Enter positive value for angle3";
     else{
         const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
-    if(sumOfAngles === 180)
-    outputEl.innerText = "The angles form a Triangle!";
-    else
-    outputEl.innerText = "The angles don't form a triangle";
-    }
+        if(Number(inputs[0].value) === 0 || Number(inputs[1].value) === 0 || Number(inputs[2].value) === 0)
+        outputEl.innerText = "The angles don't form a triangle";
+        else if(sumOfAngles === 180)
+        outputEl.innerText = "The angles form a Triangle!";
+        else
+        outputEl.innerText = "The angles don't form a triangle";
+        }
     
 }
 
