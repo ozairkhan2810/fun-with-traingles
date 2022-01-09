@@ -2,12 +2,9 @@ const sides = document.querySelectorAll(".side-input");
 const areaBtn = document.querySelector("#area-btn");
 const output = document.querySelector("#output");
 
-function calculateSumOfSquares(base, height) {
-    const area =  (base * height)/2;
-    return area;
-}
+let calculateSumOfSquares = (base, height) => (base * height)/2;
 
-function calculateArea() {
+let calculateArea = () => {
     if(sides[0].value.length === 0)
     output.innerText = "Enter base value";
     else if(sides[1].value.length === 0)
@@ -18,9 +15,8 @@ function calculateArea() {
     output.innerText = "Enter positive value for height";
     else {
         const area = calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value))
-        output.innerText = "The Area of triangle is: "+ area +" cm2";
+        output.innerText = `The Area of triangle is: ${area} cm2`;
     }
-    
 }
 
 areaBtn.addEventListener("click", calculateArea)

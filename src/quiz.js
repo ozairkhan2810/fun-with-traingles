@@ -4,7 +4,7 @@ const output = document.querySelector("#output");
 
 const correctAnswers = ["90°", "right angled", "equilateral", "equilateral", "isosceles"];
 
-function calculateScore() {
+let calculateScore = () => {
     let score = 0;
     let index = 0;
     const formResults = new FormData(quizForm);
@@ -15,7 +15,7 @@ function calculateScore() {
         index = index + 1;
     }
     if(index === correctAnswers.length)
-    output.innerText = "Your Score: " + score;
+    output.innerText = `Your Score: ${score}`;
     else
     output.innerText = "Please answer all questions";
 }
